@@ -1,10 +1,10 @@
 ---
 title: Meta
-intro: >-
+intro: >-localhost:4567
   Use the REST API to get meta information about {% data
   variables.product.product_name %}, including the IP addresses of {% data
   variables.product.product_name %} services.
-versions:
+versions:GET /payload HTTP/2
   fpt: '*'
   ghae: '*'
   ghec: '*'
