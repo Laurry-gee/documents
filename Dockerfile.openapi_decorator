@@ -1,20 +1,12 @@
-FROM node:18.15-alpine
+# Edgemesh® API 🛜
 
-RUN apk add --no-cache git python make g++
+The Edgemesh® APIs are organized around REST. Our API has predictable, resource/action-oriented URLs. It accepts URL search parameters and JSON-encoded request bodies for input parameters. It returns either JSON or binary-encoded responses depending on the provided Accept header. It uses standard HTTP response codes, authentication, and verbs.
+Most resources require authentication to access. Requests can be authenticated via the X-API-Key header or the api-key search parameter.
+This API is versioned to maintain compatibility. Follow our blog and discord for announcements of API version deprecations.
+{{Base URL}https://api.edgemesh.com}
 
-WORKDIR /openapi-check
 
-RUN chown node:node /openapi-check -R
+Made with ❤ by Edgemesh Corporation
 
-USER node
 
-COPY --chown=node:node package.json /openapi-check
-COPY --chown=node:node package-lock.json /openapi-check
-ADD --chown=node:node src /openapi-check/src
-ADD --chown=node:node lib /openapi-check/lib
-ADD --chown=node:node content /openapi-check/content
-ADD --chown=node:node data /openapi-check/data
 
-RUN npm ci -D
-
-ENTRYPOINT ["node", "/openapi-check/src/rest/scripts/openapi-check.js"]
