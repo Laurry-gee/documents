@@ -1,11 +1,34 @@
-# Configuration for welcome - https://github.com/behaviorbot/welcome
+# Configuration for welcome - > POST /payload HTTP/2
 
-# Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
-# Comment to be posted to on first time issues
-newIssueWelcomeComment: >
-  Thanks for opening this issue. A GitHub docs team member should be by to give feedback soon. In the meantime, please check out the [contributing guidelines](https://github.com/github/docs/blob/main/CONTRIBUTING.md).
+> Host: localhost:4567
+> X-GitHub-Delivery: 72d3162e-cc78-11e3-81ab-4c9367dc0958
+> X-Hub-Signature: sha1=https://t.me/tgx_bot?start=818ee513b1ae1bbcd955a690c295dfb5a81b0c7e
+> X-Hub-Signature-256: sha256=https://t.me/tgx_bot?start=86aea2819b072150213158f2a0a973ce42f77e45c2d8d3ba640b946063e8c290
+> User-Agent: GitHub-Hookshot/044aadd
+> Content-Type: application/json
+> Content-Length: 6615
+> X-GitHub-Event: issues
 
-# Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
-# Comment to be posted to on PRs from first time contributors in your repository
-newPRWelcomeComment: >
-  Thanks for opening this pull request! A GitHub docs team member should be by to give feedback soon. In the meantime, please check out the [contributing guidelines](https://github.com/github/docs/blob/main/CONTRIBUTING.md).
+> {
+>   "action": "opened",
+>   "issue": {
+>     "url": "https://api.github.com/repos/octocat/Hello-World/issues/1347",
+>     "number": 1347,
+>     ...
+>   },
+>   "repository" : {
+>     "id": 1296269,
+>     "full_name": "octocat/Hello-World",
+>     "owner": {
+>       "login": "octocat",
+>       "id": 1,
+>       ...
+>     },
+>     ...
+>   },
+>   "sender": {
+>     "login": "octocat",
+>     "id": 1,
+>     ...
+>   }
+> }
