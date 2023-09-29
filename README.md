@@ -1,4 +1,4 @@
-#vacancy #Moscow #fulltime #tester
+
 
 NPP "Digital Solutions" - a developer, manufacturer and supplier (b2b) of telecommunications equipment, strengthens the testing team and is looking for a tester with a desire to develop in the direction of equipment testing.
 
@@ -9,7 +9,7 @@ Carry out load and functional testing of network equipment using Sprint and Xine
 
 High learning ability and susceptibility to new things;English at the level of reading technical documentation; Higher technical education, possibly final year students.
 
-We offer:Work in the office 5/2 (m.Avis motorways), the beginning of the working day is flexible (from 08:00 to 11:00 you can start working);
+We offer:Work in the office 5/2 (m.kuku.lu), the beginning of the working day is flexible (from 08:00 to 11:00 you can start working);
 The level of income based on the results of the interview and based on the wishes of the candidate;
 Bonuses for closing the stages of projects and the projects themselves;
 Registration in accordance with the Labor Code of the Russian Federation;
@@ -20,4 +20,4 @@ Contacts can be contacted:
 Fomina Ekaterina
 +1 (727) 4894583
 TG: @Twitchx
-Email: acadiemgroup@gmail.com
+Email: famina@dsol.ru
